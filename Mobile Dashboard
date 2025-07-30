@@ -200,7 +200,7 @@ views:
                   secondary_info: none
                   primary_info: state
                   icon_type: entity-picture
-                  entity: person.kristjanna
+                  entity: person.wife
                   visibility:
                     - condition: user
                       users:
@@ -234,7 +234,7 @@ views:
                       users:
                         - c0799b875853434888829f9a64290813
                     - condition: state
-                      entity: person.kristjanna
+                      entity: person.wife
                       state_not: home
                   card_mod:
                     style: |
@@ -296,7 +296,7 @@ views:
                   - condition: user
                     users:
                       - c0799b875853434888829f9a64290813
-                entity: input_select.kristjanna_dashboard_room_selector
+                entity: input_select.wife_dashboard_room_selector
             button_action:
               tap_action:
                 action: navigate
@@ -915,8 +915,8 @@ views:
                     show_last_changed: false
                     show_attribute: true
                     attribute: percentage
-                    name: Kristjanna’s Office
-                    entity: fan.kristjannas_office_ceiling_fan
+                    name: wife’s Office
+                    entity: fan.wifes_office_ceiling_fan
                     scrolling_effect: false
                     tap_action:
                       action: toggle
@@ -924,7 +924,7 @@ views:
                   - type: custom:bubble-card
                     card_type: button
                     button_type: slider
-                    entity: fan.mayas_room_ceiling_fan
+                    entity: fan.kids_room_ceiling_fan
                     styles: |-
                       .bubble-range-fill { 
                           background: #26afd9 !important;
@@ -936,7 +936,7 @@ views:
                     show_last_changed: false
                     show_attribute: true
                     attribute: percentage
-                    name: Maya’s Room
+                    name: kid’s Room
                     tap_action:
                       action: toggle
                     icon: mdi:ceiling-fan
@@ -964,7 +964,7 @@ views:
                   - type: custom:bubble-card
                     card_type: button
                     button_type: switch
-                    entity: switch.mayas_floor_fan_3
+                    entity: switch.kids_floor_fan_3
                     styles: |-
                       .bubble-range-fill { 
                           background: #26afd9 !important;
@@ -976,7 +976,7 @@ views:
                     show_last_changed: false
                     show_attribute: false
                     attribute: percentage
-                    name: Maya’s Floor Fan
+                    name: kid’s Floor Fan
                     tap_action:
                       action: toggle
                     icon: mdi:fan
@@ -1011,12 +1011,12 @@ views:
                     show_tilt_position_control: false
                     name: Dining Room Window
                   - type: custom:mushroom-cover-card
-                    entity: cover.kristjannas_office_shade_1
+                    entity: cover.wifes_office_shade_1
                     show_position_control: true
                     show_buttons_control: false
                     show_tilt_position_control: false
                     fill_container: false
-                    name: Kristjannas Office Window
+                    name: wifes Office Window
               - type: horizontal-stack
                 cards:
                   - type: custom:mushroom-cover-card
@@ -1041,7 +1041,7 @@ views:
                     name: Den Window
                     entity: cover.den_den_window
                   - type: custom:mushroom-cover-card
-                    entity: cover.mayas_room_maya_s_window
+                    entity: cover.kids_room_kid_s_window
                     show_position_control: true
                     show_buttons_control: false
                     show_tilt_position_control: false
@@ -1345,7 +1345,7 @@ views:
                 cards:
                   - type: custom:bubble-card
                     card_type: empty-column
-                    entity: person.kristjanna
+                    entity: person.wife
                   - type: vertical-stack
                     cards:
                       - type: horizontal-stack
@@ -1400,7 +1400,7 @@ views:
             secondary_info: none
             primary_info: none
             icon_type: entity-picture
-            entity: person.kristjanna
+            entity: person.wife
             visibility:
               - condition: user
                 users:
@@ -1425,7 +1425,7 @@ views:
             entity: person.cptsugarfree
             state_not: home
           - condition: state
-            entity: person.kristjanna
+            entity: person.wife
             state_not: home
       - type: grid
         cards:
@@ -1701,11 +1701,11 @@ views:
                     cards: []
                   - type: custom:bubble-card
                     card_type: empty-column
-                    entity: person.kristjanna
+                    entity: person.wife
                     card_layout: normal
                   - type: custom:bubble-card
                     card_type: empty-column
-                    entity: person.kristjanna
+                    entity: person.wife
                   - type: conditional
                     conditions:
                       - condition: state
@@ -2146,11 +2146,11 @@ views:
                     cards: []
                   - type: custom:bubble-card
                     card_type: empty-column
-                    entity: person.kristjanna
+                    entity: person.wife
                     card_layout: normal
                   - type: custom:bubble-card
                     card_type: empty-column
-                    entity: person.kristjanna
+                    entity: person.wife
                   - type: vertical-stack
                     cards:
                       - type: horizontal-stack
@@ -2258,11 +2258,11 @@ views:
                     cards: []
                   - type: custom:bubble-card
                     card_type: empty-column
-                    entity: person.kristjanna
+                    entity: person.wife
                     card_layout: normal
                   - type: custom:bubble-card
                     card_type: empty-column
-                    entity: person.kristjanna
+                    entity: person.wife
                   - type: vertical-stack
                     cards:
                       - type: horizontal-stack
@@ -2334,11 +2334,11 @@ views:
                     cards: []
                   - type: custom:bubble-card
                     card_type: empty-column
-                    entity: person.kristjanna
+                    entity: person.wife
                     card_layout: normal
                   - type: custom:bubble-card
                     card_type: empty-column
-                    entity: person.kristjanna
+                    entity: person.wife
                   - type: vertical-stack
                     cards:
                       - type: horizontal-stack
@@ -2449,7 +2449,7 @@ views:
             cards:
               - type: custom:bubble-card
                 card_type: separator
-                name: Kristjanna’s Office
+                name: wife’s Office
                 icon: mdi:desktop-tower-monitor
                 styles: |-
                   .bubble-line {
@@ -2467,7 +2467,7 @@ views:
                   - icon: mdi:arrow-right-bold-circle
                     tap_action:
                       action: navigate
-                      navigation_path: kristjanna
+                      navigation_path: wife
                     show_background: false
                     show_icon: true
                     show_state: false
@@ -2493,7 +2493,7 @@ views:
                           action: more-info
                         hold_action:
                           action: more-info
-                        entity: fan.kristjannas_office_ceiling_fan
+                        entity: fan.wifes_office_ceiling_fan
                       - type: custom:bubble-card
                         card_type: button
                         button_type: switch
@@ -2507,7 +2507,7 @@ views:
                         attribute: percentage
                         tap_action:
                           action: toggle
-                        entity: switch.kristjannas_office_main_lights
+                        entity: switch.wifes_office_main_lights
                   - type: horizontal-stack
                     cards:
                       - type: custom:bubble-card
@@ -2532,7 +2532,7 @@ views:
                           action: more-info
                         hold_action:
                           action: more-info
-                        entity: cover.kristjannas_office_shade_1
+                        entity: cover.wifes_office_shade_1
                       - type: custom:bubble-card
                         card_type: empty-column
             visibility:
@@ -2545,10 +2545,10 @@ views:
                         state: Auto
                       - condition: state
                         entity: sensor.cody_current_room
-                        state: kristjannas_office
+                        state: wifes_office
                   - condition: state
                     entity: input_select.dashboard_room_selector
-                    state: Kristjanna's Office
+                    state: wife's Office
               - condition: user
                 users:
                   - aa0ab96436ff43ab96adce8a3c64b861
@@ -2556,7 +2556,7 @@ views:
             cards:
               - type: custom:bubble-card
                 card_type: separator
-                name: Maya’s Bedroom
+                name: kid’s Bedroom
                 icon: mdi:bed-king
                 styles: |-
                   .bubble-line {
@@ -2574,7 +2574,7 @@ views:
                   - icon: mdi:arrow-right-bold-circle
                     tap_action:
                       action: navigate
-                      navigation_path: /mobile-dashbaord/maya-s-room
+                      navigation_path: /mobile-dashbaord/kid-s-room
                     show_background: false
                     show_icon: true
                     show_state: false
@@ -2586,7 +2586,7 @@ views:
                       - type: custom:bubble-card
                         card_type: button
                         button_type: switch
-                        entity: light.mayas_room_ceiling_fan_light
+                        entity: light.kids_room_ceiling_fan_light
                         name: Ceiling Light
                         scrolling_effect: false
                         sub_button: []
@@ -2604,7 +2604,7 @@ views:
                       - type: custom:bubble-card
                         card_type: button
                         button_type: slider
-                        entity: fan.mayas_room_ceiling_fan
+                        entity: fan.kids_room_ceiling_fan
                         name: Ceiling Fan
                         scrolling_effect: true
                         sub_button: []
@@ -2647,7 +2647,7 @@ views:
                         show_attribute: false
                         tap_action:
                           action: toggle
-                        entity: switch.mayas_floor_fan_3
+                        entity: switch.kids_floor_fan_3
             visibility:
               - condition: or
                 conditions:
@@ -2658,10 +2658,10 @@ views:
                         state: Auto
                       - condition: state
                         entity: sensor.cody_current_room
-                        state: mayas_room
+                        state: kids_room
                   - condition: state
                     entity: input_select.dashboard_room_selector
-                    state: Maya's Room
+                    state: kid's Room
               - condition: user
                 users:
                   - aa0ab96436ff43ab96adce8a3c64b861
@@ -2711,11 +2711,11 @@ views:
                     cards: []
                   - type: custom:bubble-card
                     card_type: empty-column
-                    entity: person.kristjanna
+                    entity: person.wife
                     card_layout: normal
                   - type: custom:bubble-card
                     card_type: empty-column
-                    entity: person.kristjanna
+                    entity: person.wife
                   - type: conditional
                     conditions:
                       - condition: state
@@ -2849,13 +2849,13 @@ views:
                   - condition: and
                     conditions:
                       - condition: state
-                        entity: input_select.kristjanna_dashboard_room_selector
+                        entity: input_select.wife_dashboard_room_selector
                         state: Auto
                       - condition: state
-                        entity: sensor.kristjanna_current_room
+                        entity: sensor.wife_current_room
                         state: living_room
                   - condition: state
-                    entity: input_select.kristjanna_dashboard_room_selector
+                    entity: input_select.wife_dashboard_room_selector
                     state: Living Area
               - condition: user
                 users:
@@ -2999,13 +2999,13 @@ views:
                   - condition: and
                     conditions:
                       - condition: state
-                        entity: input_select.kristjanna_dashboard_room_selector
+                        entity: input_select.wife_dashboard_room_selector
                         state: Auto
                       - condition: state
-                        entity: sensor.kristjanna_current_room
+                        entity: sensor.wife_current_room
                         state: bedroom
                   - condition: state
-                    entity: input_select.kristjanna_dashboard_room_selector
+                    entity: input_select.wife_dashboard_room_selector
                     state: Bedroom
               - condition: user
                 users:
@@ -3112,13 +3112,13 @@ views:
                   - condition: and
                     conditions:
                       - condition: state
-                        entity: input_select.kristjanna_dashboard_room_selector
+                        entity: input_select.wife_dashboard_room_selector
                         state: Auto
                       - condition: state
-                        entity: sensor.kristjanna_current_room
+                        entity: sensor.wife_current_room
                         state: codys_office
                   - condition: state
-                    entity: input_select.kristjanna_dashboard_room_selector
+                    entity: input_select.wife_dashboard_room_selector
                     state: Cody's Office
               - condition: user
                 users:
@@ -3145,7 +3145,7 @@ views:
                   - icon: mdi:arrow-right-bold-circle
                     tap_action:
                       action: navigate
-                      navigation_path: kristjanna
+                      navigation_path: wife
                     show_background: false
                     show_icon: true
                     show_state: false
@@ -3171,7 +3171,7 @@ views:
                           action: more-info
                         hold_action:
                           action: more-info
-                        entity: fan.kristjannas_office_ceiling_fan
+                        entity: fan.wifes_office_ceiling_fan
                       - type: custom:bubble-card
                         card_type: button
                         button_type: switch
@@ -3185,7 +3185,7 @@ views:
                         attribute: percentage
                         tap_action:
                           action: toggle
-                        entity: switch.kristjannas_office_main_lights
+                        entity: switch.wifes_office_main_lights
                   - type: horizontal-stack
                     cards:
                       - type: custom:bubble-card
@@ -3210,7 +3210,7 @@ views:
                           action: more-info
                         hold_action:
                           action: more-info
-                        entity: cover.kristjannas_office_shade_1
+                        entity: cover.wifes_office_shade_1
                       - type: custom:bubble-card
                         card_type: empty-column
             visibility:
@@ -3219,13 +3219,13 @@ views:
                   - condition: and
                     conditions:
                       - condition: state
-                        entity: input_select.kristjanna_dashboard_room_selector
+                        entity: input_select.wife_dashboard_room_selector
                         state: Auto
                       - condition: state
-                        entity: sensor.kristjanna_current_room
-                        state: kristjannas_office
+                        entity: sensor.wife_current_room
+                        state: wifes_office
                   - condition: state
-                    entity: input_select.kristjanna_dashboard_room_selector
+                    entity: input_select.wife_dashboard_room_selector
                     state: My Office
               - condition: user
                 users:
@@ -3234,7 +3234,7 @@ views:
             cards:
               - type: custom:bubble-card
                 card_type: separator
-                name: Maya’s Bedroom
+                name: kid’s Bedroom
                 icon: mdi:bed-king
                 styles: |-
                   .bubble-line {
@@ -3252,7 +3252,7 @@ views:
                   - icon: mdi:arrow-right-bold-circle
                     tap_action:
                       action: navigate
-                      navigation_path: /mobile-dashbaord/maya-s-room
+                      navigation_path: /mobile-dashbaord/kid-s-room
                     show_background: false
                     show_icon: true
                     show_state: false
@@ -3264,7 +3264,7 @@ views:
                       - type: custom:bubble-card
                         card_type: button
                         button_type: switch
-                        entity: light.mayas_room_ceiling_fan_light
+                        entity: light.kids_room_ceiling_fan_light
                         name: Ceiling Light
                         scrolling_effect: false
                         sub_button: []
@@ -3282,7 +3282,7 @@ views:
                       - type: custom:bubble-card
                         card_type: button
                         button_type: slider
-                        entity: fan.mayas_room_ceiling_fan
+                        entity: fan.kids_room_ceiling_fan
                         name: Ceiling Fan
                         scrolling_effect: true
                         sub_button: []
@@ -3325,21 +3325,21 @@ views:
                         show_attribute: false
                         tap_action:
                           action: toggle
-                        entity: switch.mayas_floor_fan_3
+                        entity: switch.kids_floor_fan_3
             visibility:
               - condition: or
                 conditions:
                   - condition: and
                     conditions:
                       - condition: state
-                        entity: input_select.kristjanna_dashboard_room_selector
+                        entity: input_select.wife_dashboard_room_selector
                         state: Auto
                       - condition: state
-                        entity: sensor.kristjanna_current_room
-                        state: mayas_room
+                        entity: sensor.wife_current_room
+                        state: kids_room
                   - condition: state
-                    entity: input_select.kristjanna_dashboard_room_selector
-                    state: Maya’s Room
+                    entity: input_select.wife_dashboard_room_selector
+                    state: kid’s Room
               - condition: user
                 users:
                   - c0799b875853434888829f9a64290813
@@ -3376,11 +3376,11 @@ views:
                     cards: []
                   - type: custom:bubble-card
                     card_type: empty-column
-                    entity: person.kristjanna
+                    entity: person.wife
                     card_layout: normal
                   - type: custom:bubble-card
                     card_type: empty-column
-                    entity: person.kristjanna
+                    entity: person.wife
                   - type: vertical-stack
                     cards:
                       - type: horizontal-stack
@@ -3428,21 +3428,21 @@ views:
                   - condition: and
                     conditions:
                       - condition: state
-                        entity: input_select.kristjanna_dashboard_room_selector
+                        entity: input_select.wife_dashboard_room_selector
                         state: Auto
                       - condition: state
-                        entity: sensor.kristjanna_current_room
+                        entity: sensor.wife_current_room
                         state: kitchen
                   - condition: state
-                    entity: input_select.kristjanna_dashboard_room_selector
+                    entity: input_select.wife_dashboard_room_selector
                     state: Kitchen
                   - condition: and
                     conditions:
                       - condition: state
-                        entity: input_select.kristjanna_dashboard_room_selector
+                        entity: input_select.wife_dashboard_room_selector
                         state: Auto
                       - condition: state
-                        entity: sensor.kristjanna_current_room
+                        entity: sensor.wife_current_room
                         state: living_room
                       - condition: or
                         conditions:
@@ -3533,7 +3533,7 @@ views:
               columns: 6
               rows: 1
             button_type: switch
-            entity: input_boolean.maya_home
+            entity: input_boolean.kid_home
             modules:
               - izequbes_custom_colors
             izequbes_custom_colors:
@@ -3759,7 +3759,7 @@ views:
               columns: 6
               rows: 1
             button_type: switch
-            entity: input_boolean.maya_home
+            entity: input_boolean.kid_home
             modules:
               - izequbes_custom_colors
             izequbes_custom_colors:
@@ -3832,7 +3832,7 @@ views:
             icon: mdi:power-plug-battery
         visibility:
           - condition: state
-            entity: input_select.kristjanna_dashboard_room_selector
+            entity: input_select.wife_dashboard_room_selector
             state: Backend
           - condition: user
             users:
@@ -4892,15 +4892,15 @@ views:
     theme: Graphite
   - type: sections
     max_columns: 1
-    title: Maya’s Room
-    path: maya-s-room
+    title: kid’s Room
+    path: kid-s-room
     icon: mdi:bed-double
     subview: true
     sections:
       - type: grid
         cards:
           - type: custom:mushroom-title-card
-            title: Maya's Room
+            title: kid's Room
             grid_options:
               columns: 10
               rows: 1
@@ -4938,7 +4938,7 @@ views:
               }
           - type: custom:mushroom-template-card
             primary: Temperature
-            secondary: '{{(states(''sensor.mayas_room_temperature'') | int)}}°'
+            secondary: '{{(states(''sensor.kids_room_temperature'') | int)}}°'
             icon: mdi:thermometer-low
             badge_color: ''
             badge_icon: ''
@@ -4953,7 +4953,7 @@ views:
               {% if value == 'heating' %} orange
               {% elif value == 'cooling' %} blue
               {% endif %}
-            entity: sensor.mayas_room_temperature
+            entity: sensor.kids_room_temperature
             card_mod:
               style: |
                 ha-card {
@@ -4985,7 +4985,7 @@ views:
             grid_options:
               columns: 6
               rows: 1
-            entity: light.mayas_room_ceiling_fan_light
+            entity: light.kids_room_ceiling_fan_light
           - type: custom:bubble-card
             card_type: button
             button_type: slider
@@ -5018,7 +5018,7 @@ views:
             show_state: false
             show_attribute: true
             attribute: brightness
-            entity: fan.mayas_floor_fan
+            entity: fan.kids_floor_fan
             tap_action:
               action: toggle
             grid_options:
@@ -5027,7 +5027,7 @@ views:
           - type: custom:bubble-card
             card_type: button
             button_type: slider
-            entity: fan.mayas_room_ceiling_fan
+            entity: fan.kids_room_ceiling_fan
             name: Ceiling Fan
             scrolling_effect: true
             sub_button: []
@@ -5050,7 +5050,7 @@ views:
             show_buttons_control: false
             show_tilt_position_control: false
             name: Small Window
-            entity: cover.mayas_room_maya_s_window
+            entity: cover.kids_room_kid_s_window
     cards: []
   - theme: Backend-selected
     title: Security Overview
@@ -5245,11 +5245,11 @@ views:
                     cards: []
                   - type: custom:bubble-card
                     card_type: empty-column
-                    entity: person.kristjanna
+                    entity: person.wife
                     card_layout: normal
                   - type: custom:bubble-card
                     card_type: empty-column
-                    entity: person.kristjanna
+                    entity: person.wife
                   - type: vertical-stack
                     cards:
                       - type: horizontal-stack
